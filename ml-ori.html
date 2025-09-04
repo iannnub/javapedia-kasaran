@@ -1,0 +1,114 @@
+<ul class="col-span-3 flex flex-col space-y-8 md:col-span-2">
+    <form action="simpan_orderan_ml.php" method="POST" enctype="multipart/form-data">
+        <div class="rounded-xl bg-white/50 shadow-2xl dark:bg-secondary-700" id="section-input">
+             <div class="flex border-b border-secondary-600">
+                <div class="flex items-center justify-center rounded-tl-xl bg-gradient-to-t from-primary-500 to-primary-200 px-4 py-2 text-xl font-semibold text-text-color-foreground">1</div>
+                <h3 class="flex w-full items-center justify-between rounded-tr-xl bg-secondary-500 px-2 py-2 text-base font-semibold leading-6 text-text-color dark:bg-secondary-700 sm:px-4">
+                Masukkan Data Akun Kamu
+                </h3>
+            </div>
+
+
+            <div class="grid grid-cols-1 gap-4 p-4 sm:grid-cols-2 sm:px-6 sm:pb-4">
+                <div>
+                    <label for="userid_ml" class="block text-xs font-medium text-foreground pb-2">User ID & Nick Name</label>
+                    <input class="relative block w-full appearance-none rounded-lg border border-border bg-input px-3 py-2 text-xs text-foreground placeholder-muted-foreground focus:z-10 focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary disabled:cursor-not-allowed disabled:opacity-75"
+                    type="text" id="userid_ml" name="userid_ml" placeholder="Ketikan User ID & Nick Name" required>
+                 </div>
+                 <div>
+                    <label for="server_ml" class="block text-xs font-medium text-foreground pb-2">Server ID</label>
+                    <input class="relative block w-full appearance-none rounded-lg border border-border bg-input px-3 py-2 text-xs text-foreground placeholder-muted-foreground focus:z-10 focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary disabled:cursor-not-allowed disabled:opacity-75"
+                    type="text" id="server_ml" name="server_ml" placeholder="Ketikan Server ID" required>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="rounded-xl bg-white/50 shadow-2xl dark:bg-secondary-700" id="section-nominal">
+            <div class="flex border-b border-secondary-600">
+                <div class="flex items-center justify-center rounded-tl-xl bg-gradient-to-t from-primary-500 to-primary-200 px-4 py-2 text-xl font-semibold text-text-color-foreground">2</div>
+                <h3 class="flex w-full items-center justify-between rounded-tr-xl bg-secondary-500 px-2 py-2 text-base font-semibold leading-6 text-text-color dark:bg-secondary-700 sm:px-4">
+                Pilih Nominal yang Ingin Kamu Beli
+                </h3>
+            </div>
+        <div class="flex flex-col space-y-4 p-4 sm:p-6">
+            <div class="flex flex-col space-y-8">
+                <div>
+                    
+                    <div class="mt-4 grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-2 lg:grid-cols-3">
+                        <div class="bg-secondary-600 dark:bg-secondary-600 relative flex cursor-pointer rounded-xl border border-transparent p-2.5 shadow-sm outline-none duration-300 ease-in-out hover:ring-2 hover:ring-primary-500 hover:ring-offset-2 hover:ring-offset-secondary-600 md:p-4" id="headlessui-radiogroup-option-:rav:" role="radio" aria-checked="false" tabindex="0" data-headlessui-state="" aria-labelledby="headlessui-label-:rb0:" aria-describedby="headlessui-description-:rb1:"><span class="flex flex-1"><span class="flex flex-col justify-between"><span class="trunc block text-xs font-semibold text-white dark:text-white" id="headlessui-label-:rb0:">5 (5+0) Diamonds</span><div><span class="mt-1 flex items-center text-xxs font-medium text-white dark:text-white/75" id="headlessui-description-:rb1:">Rp&nbsp;1.431</span></div></span></span><div class="flex aspect-square w-8 items-center"><img alt="Mobile Legends - 5 (5+0) Diamonds" fetchpriority="high" width="300" height="300" decoding="async" data-nimg="1" class="object-contain object-right" sizes="80vh" srcset="image/diamond.webp" src="image/diamond.webp" style="color: transparent;"></div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="rounded-xl bg-white/50 shadow-2xl dark:bg-secondary-700" id="section-payment-channel">
+    <div class="flex border-b border-secondary-600">
+        <div class="flex items-center justify-center rounded-tl-xl bg-gradient-to-t from-primary-500 to-primary-200 px-4 py-2 text-xl font-semibold text-text-color-foreground">3</div>
+        <h3 class="flex w-full items-center justify-between rounded-tr-xl bg-secondary-500 px-2 py-2 text-base font-semibold leading-6 text-text-color dark:bg-secondary-700 sm:px-4">Pilih Metode Pembayaran</h3>
+    </div>
+    <dl class="flex w-full flex-col space-y-4 p-4 sm:p-6"><div id="headlessui-radiogroup-:r9g:" role="radiogroup" aria-labelledby="headlessui-label-:r9h:"><label class="sr-only" id="headlessui-label-:r9h:" role="none">Select a payment list</label><div class="grid grid-cols-1 gap-4" role="none"><div class="bg-white dark:bg-secondary-200 opacity-50 relative flex w-full cursor-pointer overflow-hidden rounded-lg border border-transparent p-2.5 !py-2 shadow-sm outline-none duration-300 ease-in-out hover:ring-2 hover:ring-primary-200 hover:ring-offset-2 hover:ring-offset-payment-bg md:p-4" id="headlessui-radiogroup-option-:r9i:" role="radio" aria-checked="false" aria-disabled="true" tabindex="-1" data-headlessui-state="disabled" aria-labelledby="headlessui-label-:r9j:"><div class="flex w-full items-center justify-between py-1 md:py-3"><div><span class="block pb-2.5 text-xs font-semibold text-secondary-800 sm:text-sm md:pb-4" id="headlessui-label-:r9j:">QRIS (All Payment)</span><img src="https://cdn.takapedia.com/common/d075c7ba-1b81-4d15-82be-61fd50a3b2f9.png" alt="Logo QRIS (All Payment)" class="max-h-6"></div><div><div class="relative text-sm font-semibold text-secondary-800 sm:text-base">Min. Rp&nbsp;100</div></div></div></div></div></div><div class="flex w-full transform flex-col justify-between rounded-md bg-secondary-600 text-left text-sm font-medium text-text-color duration-300 focus:outline-none" data-headlessui-state=""><dt class="relative"><button class="w-full disabled:opacity-75" disabled="" id="headlessui-disclosure-button-:r9k:" type="button" data-headlessui-state=""><div class="flex w-full justify-between px-4 py-2"><span class="transform text-base font-semibold leading-7 duration-300"><div>E-Wallet</div></span><span class="ml-6 flex h-7 items-center"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" class="h-6 w-6 transform duration-300"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"></path></svg></span></div></button><div class="absolute inset-0 z-30"></div><div class="overflow-hidden"><div class="w-full rounded-b-md bg-secondary-300 px-4 py-2"><div class="flex justify-end gap-x-2"><div class="pl-0.5"><img src="https://cdn.takapedia.com/common/f1eaf2bf-45f2-4ef9-9407-cb933d05248e.png" alt="Logo DANA Official" class="max-h-[18px]"></div><div class="pl-0.5"><img src="https://cdn.takapedia.com/common/f13763c0-6959-48e3-a385-5f8d7a091b28.png" alt="Logo OVO" class="max-h-[18px]"></div><div class="pl-0.5"><img src="https://cdn.takapedia.com/common/986ab400-1e16-4435-8428-bfc67f52d1c1.png" alt="Logo ShopeePay" class="max-h-[18px]"></div><div class="pl-0.5"><img src="https://cdn.takapedia.com/common/ad515e65-8bd0-4211-bf16-486ca6e4316d.png" alt="Logo LinkAja" class="max-h-[18px]"></div></div></div></div></dt></div><div class="flex w-full transform flex-col justify-between rounded-md bg-secondary-600 text-left text-sm font-medium text-text-color duration-300 focus:outline-none" data-headlessui-state=""><dt class="relative"><button class="w-full disabled:opacity-75" disabled="" id="headlessui-disclosure-button-:r9l:" type="button" data-headlessui-state=""><div class="flex w-full justify-between px-4 py-2"><span class="transform text-base font-semibold leading-7 duration-300"><div>Virtual Account</div></span><span class="ml-6 flex h-7 items-center"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" class="h-6 w-6 transform duration-300"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"></path></svg></span></div></button><div class="absolute inset-0 z-30"></div><div class="overflow-hidden"><div class="w-full rounded-b-md bg-secondary-300 px-4 py-2"><div class="flex justify-end gap-x-2"><div class="pl-0.5"><img src="https://cdn.takapedia.com/common/f3f593b4-5e2c-4ec0-ad82-4e984559e6fa.png" alt="Logo BNC VIRITUAL ACCOUNT" class="max-h-[18px]"></div><div class="pl-0.5"><img src="https://cdn.takapedia.com/common/698cd40d-b644-43ee-9276-61e6ebde7169.png" alt="Logo BCA VIRITUAL ACCOUNT" class="max-h-[18px]"></div><div class="pl-0.5"><img src="https://cdn.takapedia.com/common/23fa2ed2-5bf7-4ef1-a8cb-21e84c36bc53.png" alt="Logo MANDIRI VIRITUAL ACCOUNT" class="max-h-[18px]"></div><div class="pl-0.5"><img src="https://cdn.takapedia.com/common/b0a7ed22-d80a-4261-8b38-f67354b4e056.png" alt="Logo BNI VIRITUAL ACCOUNT" class="max-h-[18px]"></div><div class="pl-0.5"><img src="https://cdn.takapedia.com/common/83c14629-6e0e-401f-a37f-8b092eacfe3a.png" alt="Logo BRI VIRITUAL ACCOUNT" class="max-h-[18px]"></div><div class="pl-0.5"><img src="https://cdn.takapedia.com/common/1f55c036-7635-427f-b698-07533d0af220.png" alt="Logo BSI VIRITUAL ACCOUNT" class="max-h-[18px]"></div><div class="pl-0.5"><img src="https://cdn.takapedia.com/common/9998a94d-6ace-4fa4-91e5-349fd61f07a6.png" alt="Logo MAYBANK VIRITUAL ACCUNT" class="max-h-[18px]"></div><div class="pl-0.5"><img src="https://cdn.takapedia.com/common/4e1ff929-3286-4579-8632-860c0f9d5aad.png" alt="Logo SINARMAS VIRITUAL ACCOUNT" class="max-h-[18px]"></div><div class="pl-0.5"><img src="https://cdn.takapedia.com/common/e0c8f653-cd36-4d88-86de-6b8bd77761b1.png" alt="Logo PERMATA VIRITUAL ACCOUNT" class="max-h-[18px]"></div><div class="pl-0.5"><img src="https://cdn.takapedia.com/common/b5f7ed71-15c3-46bb-ae47-a3a0a6bd0cf5.png" alt="Logo DANAMON VIRITUAL ACCOUNT" class="max-h-[18px]"></div><div class="pl-0.5"><img src="https://cdn.takapedia.com/common/92480a22-5f39-4f66-a339-4ec426af8586.png" alt="Logo CIMB VIRITUAL ACCOUNT" class="max-h-[18px]"></div></div></div></div></dt></div><div class="flex w-full transform flex-col justify-between rounded-md bg-secondary-600 text-left text-sm font-medium text-text-color duration-300 focus:outline-none" data-headlessui-state=""><dt class="relative"><button class="w-full disabled:opacity-75" disabled="" id="headlessui-disclosure-button-:r9m:" type="button" data-headlessui-state=""><div class="flex w-full justify-between px-4 py-2"><span class="transform text-base font-semibold leading-7 duration-300"><div>Convenience Store</div></span><span class="ml-6 flex h-7 items-center"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" class="h-6 w-6 transform duration-300"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"></path></svg></span></div></button><div class="absolute inset-0 z-30"></div><div class="overflow-hidden"><div class="w-full rounded-b-md bg-secondary-300 px-4 py-2"><div class="flex justify-end gap-x-2"><div class="pl-0.5"><img src="https://cdn.takapedia.com/common/c3aa5768-fa07-41f9-927e-21721201f071.png" alt="Logo Alfamart" class="max-h-[18px]"></div><div class="pl-0.5"><img src="https://cdn.takapedia.com/common/Indogroup-41651072.png" alt="Logo Indomaret" class="max-h-[18px]"></div></div></div></div></dt></div></dl>
+</div>
+<div class="rounded-xl bg-white/50 shadow-2xl dark:bg-secondary-700" id="section-promo">
+    <div class="flex border-b border-secondary-600">
+        <div class="flex items-center justify-center rounded-tl-xl bg-gradient-to-t from-primary-500 to-primary-200 px-4 py-2 text-xl font-semibold text-text-color-foreground">4</div>
+        <h3 class="flex w-full items-center justify-between rounded-tr-xl bg-secondary-500 px-2 py-2 text-base font-semibold leading-6 text-text-color dark:bg-secondary-700 sm:px-4">Punya Kode Promo? Masukkan Disini!</h3>
+    </div>
+    <div class="p-4 sm:px-6 sm:pb-6">
+        <label for="promo-code" class="block text-xs font-medium text-text-color pb-2">Kode Promo
+        <!-- -->
+        (Optional)</label>
+        <div class="flex items-center space-x-2">
+            <div class="grow">
+                <div class="flex flex-col items-start">
+                    <input class="relative block w-full appearance-none rounded-none border border-primary-500 bg-secondary-700 px-3 py-2 text-xs text-white placeholder-secondary-200 focus:z-10 focus:border-primary-500 focus:outline-none focus:ring-primary-500 disabled:cursor-not-allowed disabled:opacity-75 !rounded-md !border-bg-color !bg-secondary-200 !text-black !placeholder-black/60 accent-secondary-800 !ring-0 placeholder:text-xs focus:!bg-white focus:!ring-transparent dark:!text-secondary-800 dark:!placeholder-secondary-800" type="text" id="promo-code" placeholder="Ketik Kode Promo Kamu Disini"/>
+                </div>
+            </div>
+            <button class="inline-flex items-center justify-center rounded-md bg-primary-500 px-4 py-2 text-sm font-medium text-text-color-foreground transition-colors duration-300 hover:bg-primary-400 disabled:cursor-not-allowed disabled:opacity-75 py-2 px-4 text-xs font-semibold disabled:cursor-not-allowed disabled:opacity-75" type="button">Gunakan</button>
+        </div>
+        <div class="pt-2 text-xs text-red-500"></div>
+    </div>
+</div>
+<div class="rounded-xl bg-white/50 shadow-2xl dark:bg-secondary-700" id="section-whatsapp">
+    <div class="flex border-b border-secondary-600">
+        <div class="flex items-center justify-center rounded-tl-xl bg-gradient-to-t from-primary-500 to-primary-200 px-4 py-2 text-xl font-semibold text-text-color-foreground">5</div>
+        <h3 class="flex w-full items-center justify-between rounded-tr-xl bg-secondary-500 px-2 py-2 text-base font-semibold leading-6 text-text-color dark:bg-secondary-700 sm:px-4">Detail Kontak Anda</h3>
+    </div>
+    <div class="p-4 sm:px-6 sm:pb-6">
+        <label for="no" class="block text-xs font-medium text-text-color pb-2">No. WhatsApp</label>
+                <div class="PhoneInputCountrySelectArrow"></div>
+            </div>
+            <input type="tel" autoComplete="tel" placeholder="Masukkan Nomor WhatsApp Kamu" class="PhoneInputInput" value/>
+        </div>
+    </div>
+</div>
+<div class="sticky inset-x-0 bottom-0 z-10 -mx-4 !mt-16 w-screen bg-bg-color md:static md:!mt-0 md:w-auto md:bg-transparent">
+    <div class="container space-y-4 py-4">
+        <div class="flex items-start justify-start space-x-4 py-2 md:hidden">
+            <div class="flex w-full flex-col space-y-1">
+                <div class="rounded-md border-l-4 border-yellow-400 bg-yellow-100 p-4">
+                    <div class="flex">
+                        <div class="flex-shrink-0">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" class="h-5 w-5 text-text-color">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126zM12 15.75h.007v.008H12v-.008z"></path>
+                            </svg>
+                        </div>
+                        <div class="ml-3">
+                            <p class="text-sm text-black">Belum ada item produk yang dipilih.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="relative">
+            <button class="inline-flex items-center justify-center rounded-md bg-primary-500 px-4 py-2 text-sm font-medium text-text-color-foreground transition-colors duration-300 hover:bg-primary-400 disabled:cursor-not-allowed disabled:opacity-75 btn-order relative flex w-full gap-2 overflow-hidden" type="button">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" class="h-5 w-5">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z"></path>
+                </svg>
+                <span>Pesan Sekarang!</span>
+            </button>
+        </div>
+    </div>
+</div>
